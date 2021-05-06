@@ -1,0 +1,21 @@
+.coef-input {
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+}
+span {
+  font-size: 20px;
+}
+.plus {
+  margin: 0 0.5rem;
+}
+button {
+  background-color: #3e64ff;
+  padding: 11px 16px;
+  color: white;
+  border-color: #3e64ff;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.25s ease-in-out;
+  margin: 0 0.5rem;
+}

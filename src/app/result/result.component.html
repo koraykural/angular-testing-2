@@ -1,0 +1,12 @@
+<div *ngIf="$roots | async">
+  <ng-container *ngIf="!($hasTwoRoots | async)">
+    <p id="single-root">
+      X<sub>1</sub>, X<sub>2</sub> : {{ ($roots | async).x1 | number }}
+    </p>
+  </ng-container>
+
+  <ng-container *ngIf="$hasTwoRoots | async">
+    <p id="root-1">X<sub>1</sub> : {{ ($roots | async).x1 | number }}</p>
+    <p id="root-2">X<sub>2</sub> : {{ ($roots | async).x2 | number }}</p>
+  </ng-container>
+</div>

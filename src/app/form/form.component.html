@@ -1,0 +1,35 @@
+<form [formGroup]="f">
+  <input
+    type="number"
+    class="coef-input"
+    id="input-a"
+    name="a"
+    formControlName="a"
+  />
+  <span> x<sup>2</sup></span>
+  <span class="plus">+</span>
+  <input
+    type="number"
+    class="coef-input"
+    id="input-b"
+    name="b"
+    formControlName="b"
+  />
+  <span> x</span>
+  <span class="plus">+</span>
+  <input
+    type="number"
+    class="coef-input"
+    id="input-c"
+    name="c"
+    formControlName="c"
+  />
+  <span> = 0</span>
+  <button
+    id="submit-btn"
+    type="submit"
+    (click)="$event.preventDefault(); onSubmit()"
+  >
+    SOLVE
+  </button>
+</form>
